@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import {BrowserRouter as Router} from "react-router-dom"
+import "react-slideshow-image/dist/styles.css";
+import {BrowserRouter} from "react-router-dom"
 
 ReactDOM.render(
-  <Router>
+  <BrowserRouter>
     <App />
-  </Router>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

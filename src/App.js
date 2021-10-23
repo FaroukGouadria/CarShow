@@ -5,14 +5,18 @@ import Home from "./components/Home"
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Product from "./components/Product"; 
+import Header from './components/Header';
+import Slidee from './components/Slide';
 function App() {
   return (
     <>
+    <Header/>
+    <Slidee/>
     <Switch>
-      <Route exact to="/" component={ Home } />
-      <Route exact to="/about" component={ About } />
-      <Route exact to="/contact" component={ Contact } />
-      <Route exact to="/Products" component={ Product } />
+      <Route exact path="/" component={ Home } />
+      <Route exact path="/about" component={ About } />
+      <Route exact path="/contact" component={ Contact } />
+      <Route exact path="/products" component={ Product } />
 
     </Switch>
     </>
