@@ -15,7 +15,7 @@ const Slidee = ()=> {
     return (
         <div className="slide-container">
             <Slide {...proprietes}>
-            <div className="each-slide align-center" >
+                <div className="each-slide " >
                 <div>
                 <img src={car1} alt="slide1" />
                 </div>
