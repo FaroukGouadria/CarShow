@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Slidee from './Slide'
+import "react-slideshow-image/dist/styles.css";
 function Home() {
+   
     return(
+         
             <div>
+            <Slidee />
                 <div className="container my-5 py-5">
                     <div className="row">
                         <div className="col-12 mb-5">
