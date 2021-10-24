@@ -1,58 +1,42 @@
 import React from 'react'
-import Slidee from './Slide'
-import "react-slideshow-image/dist/styles.css";
-function Home() {
-   
-    return(
-         
-            <div>
-            <Slidee />
-                <div className="container my-5 py-5">
-                    <div className="row">
-                        <div className="col-12 mb-5">
-                            <h1 className='display-6 fw-bolder text-center'>
-                                Lateast Products
-                            </h1>
-                            <hr />
-                        </div>
+import Product from './Product'
+
+const Home = () => {
+    return (
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/home/img1.jpg" class="d-block w-100" alt="IPhone" height="500px" />
                     </div>
-                <div className="row justify-content-center">
-                    <div className="col-md-3 mb-4">
-                        <div className="card h-100 text-center p-4 " >
-                            <img src="" className="card-img-top" alt="" height="250px" />
-                            <div className="card-body">
-                                <h5 className="card-title mb-0">BMW</h5>
-                                <p className="card-text lead fw-bolder">$ 1200000</p>
-                                <a href="/product/:id" className="btn btn-outline-dark">By Now</a>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/home/img2.jpg" class="d-block w-100" alt="IPhone" height="500px" />
                     </div>
-                    <div className="col-md-3 mb-4">
-                        <div className="card h-100 text-center p-4 " >
-                            <img src="" className="card-img-top" alt="" height="250px" />
-                            <div className="card-body">
-                                <h5 className="card-title mb-0">BMW</h5>
-                                <p className="card-text lead fw-bolder">$ 1200000</p>
-                                <a href="/product/:id" className="btn btn-outline-dark">By Now</a>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/home/img3.jpg" class="d-block w-100" alt="IPhone" height="500px" />
                     </div>
-                    <div className="col-md-3 mb-4">
-                        <div className="card h-100 text-center p-4 " >
-                            <img src="" className="card-img-top" alt="" height="250px" />
-                            <div className="card-body">
-                                <h5 className="card-title mb-0">BMW</h5>
-                                <p className="card-text lead fw-bolder">$ 1200000</p>
-                                <a href="/product/:id" className="btn btn-outline-dark">By Now</a>
-                            </div>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/home/img4.jpg" class="d-block w-100" alt="IPhone" height="500px" />
                     </div>
                 </div>
-               
-                </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <Product />
+        </div>
     )
-            
 }
 
 export default Home

@@ -6,7 +6,6 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Product from "./components/Product"; 
 import Header from './components/Header';
-import Slidee from './components/Slide';
 function App() {
   return (
     <>
@@ -17,7 +16,6 @@ function App() {
       <Route exact path="/about" component={ About } />
       <Route exact path="/contact" component={ Contact } />
       <Route exact path="/products" component={ Product } />
-
     </Switch>
     </>
   );
