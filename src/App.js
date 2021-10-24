@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Product from "./components/Product"; 
 import Header from './components/Header';
+import ProductDetail from './components/ProductDetail';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/about" component={ About } />
       <Route exact path="/contact" component={ Contact } />
       <Route exact path="/products" component={ Product } />
+      <Route exact path="/products/:id" component={ ProductDetail } />
     </Switch>
     </>
   );
