@@ -4,21 +4,25 @@ function Login() {
     return (
         <div>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" className="btn btn-outline-primary ms-auto ms-2 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
                 LOGIN
             </button>
 
             {/* <!-- Modal --> */}
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">LOGIN</h5>
+                            <h5 className="modal-title" id="loginModalLabel">LOGIN</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form>
-                            <div class="mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <div className="model-body m-2">
+                            <button className="btn btn-primary w-100  mb-4 "><span><i className='fa fa-google me-2'/></span>Sign in with Google</button>
+                            <button className="btn btn-primary w-100 mb-4 "><span><i className='fa fa-facebook me-2' /></span>Sign in with Facebook</button>
+                        </div>
+                        <form className='m-2'>
+                            <div class="mb-3  ">
+                                <label htmlFor="exampleInputEmail1" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                             </div>
                             <div class="mb-3">
@@ -31,9 +35,8 @@ function Login() {
                             </div>
                             
                         </form>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Login</button>
+                        <div className="modal-footer m-2">
+                            <button type="button" className="btn btn-outline-primary w-100 mt-4">Login</button>
                         </div>
                     </div>
                 </div>

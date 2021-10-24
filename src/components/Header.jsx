@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link}from "react-router-dom"
+import CarteBtn from './buttons/CarteBtn';
 import Login from './buttons/Login';
+import Register from './buttons/Register';
 function Header() {
     
     return (
@@ -32,9 +34,11 @@ function Header() {
                             </li>
                         </ul>
 
+                    <Link className="navbar-brand mx-auto fw-bold " to="/">CarShow</Link>
                     </div>
-                    <Link className="navbar-brand" to="/">CarShow</Link>
                     <Login/>
+                    <Register/>
+                    <CarteBtn/>
                 </div>
             </nav>
         </div>
