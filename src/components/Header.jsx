@@ -34,7 +34,7 @@ function Header() {
                             </li>
                         </ul>
 
-                    <Link className="navbar-brand mx-auto fw-bold " to="/">CarShow</Link>
+                    <Link className="navbar-brand mx-auto fw-bold " to="/">IphoneShow</Link>
                     </div>
                     <Login/>
                     <Register/>
